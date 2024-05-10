@@ -9,3 +9,5 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 49ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 7494)
 
 
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `projeto_1_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `projeto_1_test` DEFAULT CHARACTER SET `utf8mb4`[0m
