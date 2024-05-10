@@ -25,3 +25,70 @@ Migrating to CreateCarteiras (20240510165736)
   [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240510165736')[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3513545400586377555')[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 10.0.2.2 at 2024-05-10 14:03:55 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.1.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.1.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 383)
+Completed 200 OK in 26ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4611)
+
+
+Started GET "/clientes" for 10.0.2.2 at 2024-05-10 14:04:00 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ClientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.5ms)[0m  [1m[34mSELECT `clientes`.* FROM `clientes`[0m
+  ↳ app/views/clientes/index.html.erb:6
+  Rendered clientes/index.html.erb within layouts/application (Duration: 80.5ms | Allocations: 1694)
+  Rendered layout layouts/application.html.erb (Duration: 683.0ms | Allocations: 70685)
+Completed 200 OK in 763ms (Views: 686.4ms | ActiveRecord: 0.8ms | Allocations: 80159)
+
+
+Started GET "/clientes/new" for 10.0.2.2 at 2024-05-10 14:04:06 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ClientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (Duration: 41.1ms | Allocations: 5463)
+  Rendered clientes/new.html.erb within layouts/application (Duration: 44.0ms | Allocations: 5818)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 6884)
+Completed 200 OK in 108ms (Views: 51.6ms | ActiveRecord: 2.8ms | Allocations: 20432)
+
+
+Started GET "/clientes" for 10.0.2.2 at 2024-05-10 14:04:08 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ClientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.5ms)[0m  [1m[34mSELECT `clientes`.* FROM `clientes`[0m
+  ↳ app/views/clientes/index.html.erb:6
+  Rendered clientes/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1009)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 1946)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 2266)
+
+
+Started GET "/carteiras" for 10.0.2.2 at 2024-05-10 14:04:20 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CarteirasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carteiras/index.html.erb within layouts/application
+  [1m[36mCarteira Load (0.5ms)[0m  [1m[34mSELECT `carteiras`.* FROM `carteiras`[0m
+  ↳ app/views/carteiras/index.html.erb:6
+  Rendered carteiras/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1370)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2444)
+Completed 200 OK in 25ms (Views: 15.2ms | ActiveRecord: 0.5ms | Allocations: 3605)
+
+
+Started GET "/carteiras/new" for 10.0.2.2 at 2024-05-10 14:04:21 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CarteirasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carteiras/new.html.erb within layouts/application
+  Rendered carteiras/_form.html.erb (Duration: 10.2ms | Allocations: 1858)
+  Rendered carteiras/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 2143)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 3201)
+Completed 200 OK in 49ms (Views: 21.9ms | ActiveRecord: 1.9ms | Allocations: 9090)
+
+
