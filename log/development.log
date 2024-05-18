@@ -1624,3 +1624,15 @@ Processing by ClientesController#show as HTML
 Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 2261)
 
 
+Started GET "/clientes" for 10.0.2.2 at 2024-05-18 09:25:10 -0300
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ClientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.5ms)[0m  [1m[34mSELECT `clientes`.* FROM `clientes`[0m
+  ↳ app/views/clientes/index.html.erb:6
+  Rendered clientes/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 869)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 1808)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 2078)
+
+
